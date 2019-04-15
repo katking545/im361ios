@@ -22,23 +22,36 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PracticePro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ti-Yg-mdh">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-1D-wS3">
-                                        <rect key="frame" x="0.0" y="216" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="129.5" width="375" height="128.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-19-gkS">
+                                        <rect key="frame" x="0.0" y="259" width="377" height="129"/>
+                                        <connections>
+                                            <action selector="didPressSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="jbz-Pj-adr"/>
+                                        </connections>
+                                    </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-Ku-KNa">
-                                        <rect key="frame" x="0.0" y="432" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="389" width="375" height="128.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BeQ-fz-W95" kind="show" id="jjQ-F9-oca"/>
+                                            <segue destination="BeQ-fz-W95" kind="showDetail" identifier="viewChange" id="jjQ-F9-oca"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r6-r3-rpg">
+                                        <rect key="frame" x="0.0" y="518.5" width="375" height="128.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="94G-RG-vfI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -58,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="c6W-Vy-DvX">
             <objects>
-                <viewController id="BeQ-fz-W95" sceneMemberID="viewController">
+                <viewController id="BeQ-fz-W95" customClass="WelcomeViewController" customModule="PracticePro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mbr-kB-PMl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +95,13 @@
                                             <constraint firstAttribute="height" constant="167" id="Rxh-J7-XAg"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-sE-EX0">
+                                        <rect key="frame" x="0.0" y="187.5" width="375" height="0.0"/>
+                                        <state key="normal" title="Go back"/>
+                                        <connections>
+                                            <action selector="GoBack:" destination="BeQ-fz-W95" eventType="touchUpInside" id="c1G-U9-to1"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-Te-Nkh">
                                         <rect key="frame" x="0.0" y="187.5" width="375" height="459.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
