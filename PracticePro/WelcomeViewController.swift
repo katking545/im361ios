@@ -14,7 +14,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func didPressGoBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 }
