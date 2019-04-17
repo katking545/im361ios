@@ -27,9 +27,9 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-1D-wS3">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-1D-wS3">
                                         <rect key="frame" x="0.0" y="129.5" width="375" height="128.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-19-gkS">
                                         <rect key="frame" x="0.0" y="259" width="377" height="129"/>
@@ -88,22 +88,14 @@
                                         <color key="textColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ItS-mk-OA5">
-                                        <rect key="frame" x="0.0" y="20.5" width="375" height="167"/>
-                                        <color key="backgroundColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piano" translatesAutoresizingMaskIntoConstraints="NO" id="EhV-Wg-d9B">
+                                        <rect key="frame" x="0.0" y="20.5" width="375" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="167" id="Rxh-J7-XAg"/>
+                                            <constraint firstAttribute="height" constant="200" id="HJj-d2-5ic"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-sE-EX0">
-                                        <rect key="frame" x="0.0" y="187.5" width="375" height="0.0"/>
-                                        <state key="normal" title="Go back"/>
-                                        <connections>
-                                            <action selector="GoBack:" destination="BeQ-fz-W95" eventType="touchUpInside" id="c1G-U9-to1"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-Te-Nkh">
-                                        <rect key="frame" x="0.0" y="187.5" width="375" height="459.5"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="375" height="426.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="How to prepare for your audition">
                                             <color key="titleColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,10 +104,17 @@
                                             <segue destination="e9F-yG-9DX" kind="showDetail" id="xGW-IA-kI2"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-sE-EX0">
+                                        <rect key="frame" x="0.0" y="647" width="375" height="0.0"/>
+                                        <state key="normal" title="Go back"/>
+                                        <connections>
+                                            <action selector="GoBack:" destination="BeQ-fz-W95" eventType="touchUpInside" id="c1G-U9-to1"/>
+                                            <action selector="didPressGoBack:" destination="BeQ-fz-W95" eventType="touchUpInside" id="IF9-JV-xoM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hMP-Te-Nkh" secondAttribute="trailing" id="4El-fQ-53D"/>
-                                    <constraint firstItem="hMP-Te-Nkh" firstAttribute="top" secondItem="ItS-mk-OA5" secondAttribute="bottom" id="Pgf-3I-Kxg"/>
                                     <constraint firstItem="hMP-Te-Nkh" firstAttribute="leading" secondItem="mHh-pe-e7m" secondAttribute="leading" id="saT-fI-Uik"/>
                                     <constraint firstAttribute="bottom" secondItem="hMP-Te-Nkh" secondAttribute="bottom" id="wiQ-fi-m6U"/>
                                 </constraints>
@@ -152,19 +151,21 @@
                                         <color key="textColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIR-ys-VV7">
-                                        <rect key="frame" x="0.0" y="20.5" width="375" height="183"/>
-                                        <color key="backgroundColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flute" translatesAutoresizingMaskIntoConstraints="NO" id="bok-r2-ptw">
+                                        <rect key="frame" x="0.0" y="20.5" width="375" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="vl5-e4-FJo"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to prepare for your audition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJs-bb-3tv">
-                                        <rect key="frame" x="0.0" y="203.5" width="375" height="23"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="375" height="23"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICI-rs-vLU">
-                                        <rect key="frame" x="0.0" y="226.5" width="375" height="162.5"/>
+                                        <rect key="frame" x="0.0" y="243.5" width="375" height="162.5"/>
                                         <string key="text">    Whether you’ve been playing for one year or ten, we can all get some nerves when its audition time. While a little nervousness is healthy, you don’t want to be completely nervous! One of the best ways to help with nerves is to be prepared. Heres an example of how to set yourself up for success. 
 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -172,13 +173,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One month before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZX-NQ-8cF">
-                                        <rect key="frame" x="0.0" y="389" width="375" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="406" width="375" height="31.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-qw-MOw">
-                                        <rect key="frame" x="0.0" y="420.5" width="375" height="142.5"/>
+                                        <rect key="frame" x="0.0" y="437.5" width="375" height="142.5"/>
                                         <string key="text">This is when we want to be running through our solos and scales. Here we’ve set up a sample practice session. 
 
 30 min. Scales
@@ -189,7 +190,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-Vc-NCN">
-                                        <rect key="frame" x="0.0" y="563" width="375" height="84"/>
+                                        <rect key="frame" x="0.0" y="580" width="375" height="67"/>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.68627450980392157" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Add this to my calendar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,4 +214,9 @@
             <point key="canvasLocation" x="2096.8000000000002" y="127.28635682158921"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Piano" width="540" height="360"/>
+        <image name="flute" width="512" height="340.5"/>
+        <image name="icon" width="768" height="768"/>
+    </resources>
 </document>
