@@ -12,10 +12,14 @@ import UIKit
 class ScheduleTableViewController: UITableViewController {
     
     let data = [
-        Lessons(name: "Practice", difficulty: 4, time: 3),
-        Lessons(name: "Flutter Tounge", difficulty: 4, time: 3),
-        Lessons(name: "Perfect Pitch", difficulty: 8, time: 1000),
-        Lessons(name: "Hot Cross Buns", difficulty: -1, time: -5)
+        Lessons(name: "Theory 101", difficulty: 4, time: 3),
+        Lessons(name: "Learn to Flutter Tounge", difficulty: 4, time: 3),
+        Lessons(name: "Perfect Pitch", difficulty: 8, time: 30),
+        Lessons(name: "Hot Cross Buns", difficulty: -1, time: 2),
+        Lessons(name: "Theory Intermediate", difficulty: 6, time: 15),
+        Lessons(name: "Piano Basics", difficulty: 4, time: 15),
+        Lessons(name: "High Note Boot Camp", difficulty: 7, time: 9),
+        Lessons(name: "How Your Instrument Works", difficulty: 3, time: 10)
 ]
     
     

@@ -95,19 +95,8 @@
                                             <constraint firstAttribute="height" constant="200" id="HJj-d2-5ic"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-sE-EX0">
-                                        <rect key="frame" x="0.0" y="220.5" width="414" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="dly-5X-Sao"/>
-                                        </constraints>
-                                        <state key="normal" title="Go back"/>
-                                        <connections>
-                                            <action selector="GoBack:" destination="BeQ-fz-W95" eventType="touchUpInside" id="c1G-U9-to1"/>
-                                            <action selector="didPressGoBack:" destination="BeQ-fz-W95" eventType="touchUpInside" id="IF9-JV-xoM"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-Te-Nkh">
-                                        <rect key="frame" x="0.0" y="320.5" width="414" height="453.5"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="414" height="553.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="How to prepare for your audition">
                                             <color key="titleColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
