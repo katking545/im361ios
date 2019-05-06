@@ -13,7 +13,6 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="PracticePro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -69,6 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="x7s-hh-Yey"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>
@@ -175,57 +175,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-pe-e7m">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yuN-Po-5Rh">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piano" translatesAutoresizingMaskIntoConstraints="NO" id="EhV-Wg-d9B">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piano" translatesAutoresizingMaskIntoConstraints="NO" id="N62-QO-tMl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="HJj-d2-5ic"/>
+                                            <constraint firstAttribute="height" constant="275" id="DYt-FJ-gnC"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-Te-Nkh">
-                                        <rect key="frame" x="0.0" y="200" width="414" height="574"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="How to prepare for your audition">
-                                            <color key="titleColor" red="0.35686274509999999" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wB-Z3-HvO">
+                                        <rect key="frame" x="0.0" y="275" width="414" height="409"/>
+                                        <state key="normal" title="How to prepare for your audition"/>
                                         <connections>
-                                            <segue destination="e9F-yG-9DX" kind="show" id="xGW-IA-kI2"/>
+                                            <segue destination="e9F-yG-9DX" kind="show" id="y3x-dP-WLl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tms-a0-A8S">
+                                        <rect key="frame" x="0.0" y="684" width="414" height="30"/>
+                                        <state key="normal" title="Leaderboard"/>
+                                        <connections>
+                                            <segue destination="0ca-HC-uuj" kind="show" id="9jk-Va-2A5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqy-Dr-yyp">
+                                        <rect key="frame" x="0.0" y="714" width="414" height="30"/>
+                                        <state key="normal" title="Badge Progress"/>
+                                        <connections>
+                                            <segue destination="F0U-qc-cKf" kind="show" id="0ph-0i-RFK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgV-1p-Z1o">
+                                        <rect key="frame" x="0.0" y="744" width="414" height="30"/>
+                                        <state key="normal" title="Calender"/>
+                                        <connections>
+                                            <segue destination="GeT-iH-uRE" kind="show" id="Jq9-9h-R2o"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hMP-Te-Nkh" secondAttribute="trailing" id="4El-fQ-53D"/>
-                                    <constraint firstItem="hMP-Te-Nkh" firstAttribute="leading" secondItem="mHh-pe-e7m" secondAttribute="leading" id="saT-fI-Uik"/>
-                                    <constraint firstAttribute="bottom" secondItem="hMP-Te-Nkh" secondAttribute="bottom" id="wiQ-fi-m6U"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mHh-pe-e7m" firstAttribute="top" secondItem="g28-IS-FQg" secondAttribute="top" id="Sqt-dE-uQQ"/>
-                            <constraint firstItem="mHh-pe-e7m" firstAttribute="leading" secondItem="g28-IS-FQg" secondAttribute="leading" id="dLZ-9L-tei"/>
-                            <constraint firstItem="g28-IS-FQg" firstAttribute="trailing" secondItem="mHh-pe-e7m" secondAttribute="trailing" id="fq3-ey-9vb"/>
-                            <constraint firstItem="g28-IS-FQg" firstAttribute="bottom" secondItem="mHh-pe-e7m" secondAttribute="bottom" id="rOC-Kd-5pq"/>
+                            <constraint firstItem="g28-IS-FQg" firstAttribute="bottom" secondItem="yuN-Po-5Rh" secondAttribute="bottom" id="4NS-4Q-ns1"/>
+                            <constraint firstItem="g28-IS-FQg" firstAttribute="trailing" secondItem="yuN-Po-5Rh" secondAttribute="trailing" id="Atw-5I-i3o"/>
+                            <constraint firstItem="yuN-Po-5Rh" firstAttribute="top" secondItem="g28-IS-FQg" secondAttribute="top" id="ETi-mo-PFn"/>
+                            <constraint firstItem="yuN-Po-5Rh" firstAttribute="leading" secondItem="g28-IS-FQg" secondAttribute="leading" id="zeF-pY-f0O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g28-IS-FQg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLz-gb-8ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2096" y="129"/>
+            <point key="canvasLocation" x="2095.6521739130435" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Lesson-->
         <scene sceneID="4ka-xr-2oE">
             <objects>
-                <viewController id="e9F-yG-9DX" sceneMemberID="viewController">
+                <viewController title="Lesson" id="e9F-yG-9DX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lNU-NH-z8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EHF-mV-5DL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="560"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z31-Pi-7n1">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
@@ -271,29 +284,27 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-Vc-NCN">
+                                        <rect key="frame" x="0.0" y="560" width="414" height="214"/>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.68627450980392157" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Go Forward">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nJU-Sv-NBR" kind="show" id="ebB-s6-zKQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="aaY-D1-QCY"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-Vc-NCN">
-                                <rect key="frame" x="0.0" y="609" width="414" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96470588235294119" green="0.68627450980392157" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Go Forward">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="nJU-Sv-NBR" kind="show" id="ebB-s6-zKQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="EHF-mV-5DL" firstAttribute="top" secondItem="sbX-lg-L4y" secondAttribute="top" id="73f-SL-hO9"/>
                             <constraint firstItem="EHF-mV-5DL" firstAttribute="leading" secondItem="sbX-lg-L4y" secondAttribute="leading" id="CdB-7E-pOb"/>
-                            <constraint firstItem="EHF-mV-5DL" firstAttribute="top" secondItem="sbX-lg-L4y" secondAttribute="top" id="Dg3-uX-k92"/>
-                            <constraint firstItem="sbX-lg-L4y" firstAttribute="bottom" secondItem="EHF-mV-5DL" secondAttribute="bottom" id="HEH-Iy-Bdx"/>
+                            <constraint firstItem="EHF-mV-5DL" firstAttribute="leading" secondItem="sbX-lg-L4y" secondAttribute="leading" id="DMc-qB-dp3"/>
+                            <constraint firstItem="EHF-mV-5DL" firstAttribute="trailing" secondItem="sbX-lg-L4y" secondAttribute="trailing" id="Fjo-pG-rn7"/>
                             <constraint firstItem="sbX-lg-L4y" firstAttribute="trailing" secondItem="EHF-mV-5DL" secondAttribute="trailing" id="kPT-YL-yJd"/>
+                            <constraint firstItem="sbX-lg-L4y" firstAttribute="bottom" secondItem="EHF-mV-5DL" secondAttribute="bottom" id="lQz-Mp-v2V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sbX-lg-L4y"/>
                     </view>
@@ -301,6 +312,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qET-h2-NX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3092.753623188406" y="128.57142857142856"/>
+        </scene>
+        <!--Leaderboard-->
+        <scene sceneID="8dJ-Xm-gTU">
+            <objects>
+                <viewController title="Leaderboard" id="0ca-HC-uuj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DZN-Ee-4oq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qv8-Jb-Y5h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9r-G1-6WR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3096" y="801"/>
+        </scene>
+        <!--Badges-->
+        <scene sceneID="XNI-g7-oXB">
+            <objects>
+                <viewController title="Badges" id="F0U-qc-cKf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2TK-ty-JRd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tzp-Tg-OQs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sM-R6-eHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3096" y="1469"/>
+        </scene>
+        <!--Calender-->
+        <scene sceneID="BhJ-zK-h8X">
+            <objects>
+                <viewController title="Calender" id="GeT-iH-uRE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u3W-xH-VAd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HnL-ke-8v2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZ5-9k-gUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3096" y="2160"/>
+        </scene>
+        <!--Practice-->
+        <scene sceneID="eVT-Zp-JeD">
+            <objects>
+                <viewController title="Practice" id="LPm-M4-ilv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qN2-qQ-2Rb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3dk-fB-HXn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLB-RD-kUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3096" y="2853"/>
+        </scene>
+        <!--Tools-->
+        <scene sceneID="HJU-p8-Kui">
+            <objects>
+                <viewController title="Tools" id="eLl-aU-367" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEp-mZ-n3F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Pqv-Tm-YSe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvS-VR-frZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3085" y="3514"/>
         </scene>
         <!--Schedule Table View Controller-->
         <scene sceneID="dRQ-Gv-Liz">

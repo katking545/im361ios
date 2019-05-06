@@ -22,6 +22,8 @@ class PracticeProTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let lessons = Lessons(name: "a flat scale", difficulty: 3, time: 10)
+        XCTAssertEqual("a flat scale", lessons.name)
     }
 
     func testPerformanceExample() {
